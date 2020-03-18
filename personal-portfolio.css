@@ -1,0 +1,97 @@
+/**************************************************
+Color by Jessica Colaluca
+https://www.design-seeds.com/category/wander/wanderlust/
+Dark blue gray - #394140
+Wine - #735250
+Rose - #CDACA2
+Delicate Rose - #E7D6CF
+Light blue gray - #CFD9DE
+Light gray - #EAE6E5
+***************************************************/
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Georgia, serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Beth Ellen', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 5px;
+    text-align: center;
+}
+#navbar {
+    width: 100vw;
+    background-color: #735250;
+    color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+#navbar a {
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+#navbar a:link, #navbar a:visited {
+    color: #E7D6CF;
+}
+
+#navbar a:hover, #navbar a:active {
+    color: #CDACA2;
+}
+
+#welcome-section {
+    height:  100vh;
+}
+
+#welcome-text {
+    margin: 35vh auto 0;
+}
+
+main h1, #project-wrapper {
+    position:relative;
+    top: -100px;
+}
+#project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.project-tile {
+    border: 3pt solid #394140;
+    height: 300px;
+    margin: 0 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-image {
+    width: 235px;
+    margin: 10px;
+}
+

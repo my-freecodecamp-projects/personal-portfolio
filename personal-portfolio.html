@@ -1,0 +1,117 @@
+<!-- **************************************************************** 
+freeCodeCamp Personal Portfolio 
+Final Project for the Responsive Web Design Course
+Requirements:
+Responsive with at least one @media query
+Navigation section with id="navbar" that is fixed to top of viewport
+    and at least one link to a section of the page
+Welcome Section with id="welcome-section" and a <h1> text element
+    and a height equal to the viewport
+Projects Section with an id="projects" with an element class="project-tile"
+    to hold the projects
+A link with id="profile-link" that links to my GitHub or FCC profile
+    in a new tab   
+
+Index:
+Header
+    Navbar with links to sections of website
+    Welcome
+Main
+    Projects
+        Project tiles
+Footer
+    Profile link  
+*********************************************************************** -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Terri Fricker Personal Portfolio</title>
+        <meta name="description" content="Personal Portfolio, the final project in freeCodeCamp's
+        Responsive Web Design Course">
+        <meta name="keywords" content="html, css, projects, resume">
+        <meta name="author" content="Terri Fricker">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="personal-portfolio.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Beth+Ellen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins>">
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <h2>
+                    <a href="#projects">Projects</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#contact">Contact</a>
+                </h2>
+            </nav>
+
+            <div id="welcome-section">
+                <div id="welcome-text">
+                    <h1>Terri Fricker</h1>
+                    <h2>Front End Web Design Portfolio</h2>
+                    <h3>Using HTML5 and CSS3</h3>
+                </div> <!-- end welcome text -->
+            </div> <!-- end welcome section -->
+        </header>
+
+        <main id="projects">
+            <h1>Projects</h1>
+            <div id="project-wrapper">
+                <div class="project-tile">
+                    Tribute Page<br>
+                    <a href="https://codepen.io/terrifricker/full/ZEGpjOV"
+                        target="_blank"> <img class="project-image" 
+                        src="http://frickersolutions.com/images/tribute-page.png"
+                        alt="My tribute page to Superman"></a><br>
+                        This was my first project.  It is very simple and
+                        I used a lot of color.  I learned that I need to be more
+                        careful about the contrast between background color and
+                        text color.
+                </div>
+                <div class="project-tile">
+                    Survey Form<br>
+                    <a href="https://codepen.io/terrifricker/full/dyoOzWV"
+                        target="_blank"> <img class="project-image" 
+                        src="http://frickersolutions.com/images/survey-form.png"
+                        alt="My Investment Broker Survey"></a><br>
+                        I struggled with this responsive project.
+                        The process included a lot of study about grid and flexbox and
+                        a lot of experimentation.  I feel much more confident with both.
+                </div>
+                <div class="project-tile">
+                    Product Landing Page<br>
+                    <a href="https://codepen.io/terrifricker/full/rNVwgPx"
+                        target="_blank"> <img class="project-image" 
+                        src="http://frickersolutions.com/images/product-landing-page.png"
+                        alt="My School Supply Store Landing Page"></a><br>
+                        I very much enjoyed this project.  I love color and the design
+                        process was exciting.  I used flexbox for making it responsive.
+
+                </div>
+                <div class="project-tile">
+                    Technical Documentation Page<br>
+                    <a href="https://codepen.io/terrifricker/full/bGdLxjy"
+                        target="_blank"> <img class="project-image" 
+                        src="http://frickersolutions.com/images/technical-documentation-page.png"
+                        alt="My Technical Documentation Page"></a><br>
+                        My confidence had grown by the time I coded this project, so I was
+                        faster.  I am less reliant on google for correct syntax.
+                </div>
+            </div>
+        </main>
+
+        <section id="about">
+            Text about me
+        </section>
+
+        <footer id="resources">
+            <a id="profile-link" href="GitHub-or-FCC-profile" 
+            target="_blank">link to profile</a>
+        </footer>
+
+    </body>
+</html>
